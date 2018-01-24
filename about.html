@@ -24,10 +24,13 @@
 
   <body>
 
-    <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-lower">Hair Art Studio</span>
-      <span class="site-heading-upper text-primary mb-3">Hair by Christine Hannaly</span>
-    </h1>
+    <div class="the-header">
+      <h1 class="site-heading text-center text-white d-none d-lg-block">
+        <span class="site-heading-lower">Hair Art Studio</span>
+        <span class="site-heading-upper text-primary mb-3">Hair by Christine Hannaly</span>
+      </h1>
+    </div>
+      
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
@@ -38,20 +41,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item active px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
-            </li>
-            <li class="nav-item px-lg-4">
-              <a class="nav-link text-uppercase text-expanded" href="store.html">Menu</a>
-            </li>
+              <li class="nav-item  px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="index.html">Home
+                  </a>
+                </li>
+                <li class="nav-item active px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="about.html">About</a>
+                  <span class="sr-only">(current)</span>
+                </li>
+                <li class="nav-item px-lg-4">
+                    <a class="nav-link text-uppercase text-expanded" href="store.html">Menu</a>
+                  </li>
+                <li class="nav-item px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="products.html">Products</a>
+                </li>
+                <li class="nav-item px-lg-4">
+                  <a class="nav-link text-uppercase text-expanded" href="studio.html">Hours</a>
+                </li>
           </ul>
         </div>
       </div>
@@ -68,67 +74,10 @@
                   <span class="section-heading-upper">Great Styes, Healthy Hair</span>
                   <span class="section-heading-lower">About My Salon</span>
                 </h2>
+                <p>Hair Art Studio is just what it sounds like: a small studio located in the Phenix Salon Suites. Enhancing people’s beauty is my passion. Every person is beautiful, I just help make them shine. I have 24 years of experience doing hair, including educating and teaching others in my field.</p>
+                <p>I specialize in color enhancement, specialty haircutting, and special occasion styling. I have had specialty training in Redken and Goldwell color. My training in special occasion styling and haircutting came from well known platform artists such as Luis Alvarez, Eric Fischer, and Edward Tytel while I worked for 9 years as an Aquage educator. </p>
                 <p>Hair Art Studio is located in the north end of downtown Colorado Springs, Colorado. Free parking for guests visiting the salon is provided by Chase bank in their parking lot on the side of the Chase bank building located on the corner of Boulder and N. Tejon Street.</p>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="page-section cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-9 col-lg-10 mx-auto">
-            <div class="cta-inner text-center rounded">
-              <h2 class="section-heading mb-5">
-                <span class="section-heading-lower">Hours</span>
-                <span class="section-heading-upper">Walk-Ins Welcome!</span>
-              </h2>
-              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Sunday
-                  <span class="ml-auto">By Appointment Only</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Monday
-                  <span class="ml-auto">By Appointment Only</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Tuesday
-                  <span class="ml-auto">10:00 AM to 7:00 PM</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Wednesday
-                  <span class="ml-auto">By Appointment Only</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Thursday
-                  <span class="ml-auto">10:00 AM to 7:00 PM</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Friday
-                  <span class="ml-auto">9:00 AM to 5:00 PM</span>
-                </li>
-                <li class="list-unstyled-item list-hours-item d-flex">
-                  Saturday
-                  <span class="ml-auto">9:00 AM to 5:00 PM</span>
-                </li>
-              </ul>
-              <p class="address mb-5">
-                <em>
-                  <strong>402 N. Tejon Street, Suite #105</strong>
-                  <br>
-                  Colorado Springs, CO 80903
-                </em>
-              </p>
-              <p class="mb-0">
-                <medium>
-                  <em>Call Anytime</em>
-                </medium>
-                <br>
-                (719) 651-8285
-              </p>
             </div>
           </div>
         </div>
@@ -146,5 +95,21 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   </body>
+
+  <script>
+    
+    setInterval(checkWidth, 100);
+    var header = $('.the-header')
+
+    function checkWidth() {
+      var windowWidth = $(this).width()
+      if (windowWidth < 992) {
+        header.hide()
+      } else {
+        header.show()
+      }
+    }
+
+  </script>
 
 </html>
