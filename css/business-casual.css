@@ -261,3 +261,7 @@ p {
   margin: 0 auto;
   padding-top: 3px;
 }
+
+#appointment-button {
+  color: blue;
+}
