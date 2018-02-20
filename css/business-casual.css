@@ -259,8 +259,9 @@ p {
   padding-top: 3px;
 }
 
-#appointment-button {
+.appointment-button {
   color: blue;
+  z-index: 2 !important;
 }
 
 .thumbnail img {
@@ -270,5 +271,10 @@ p {
 }
 
 #portfolio-wrap {
-  background-color: rgba(0, 0, 0, 0.50)
+  background-color: rgba(0, 0, 0, 0.50);
+}
+
+#portfolio-container {
+  width: 85%;
+  margin: 0 auto;
 }
