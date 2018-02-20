@@ -26,7 +26,6 @@ p {
 .site-heading {
   margin-top: 5rem;
   margin-bottom: 5rem;
-  text-transform: lowercase;
   line-height: 1;
   font-family: 'Raleway';
 }
@@ -49,7 +48,6 @@ p {
 }
 
 .section-heading {
-  text-transform: lowercase;
 }
 
 .section-heading .section-heading-upper {
@@ -225,7 +223,6 @@ p {
 
 .text-primary {
   color: rgb(66, 158, 219) !important;
-  text-transform: lowercase;
 }
 
 .bg-primary {
