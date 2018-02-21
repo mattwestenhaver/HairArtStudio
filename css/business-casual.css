@@ -143,8 +143,7 @@ p {
 
 .cta .cta-inner {
   position: relative;
-  padding: 3rem;
-  margin: 0.5rem;
+  padding: 2rem;
   background-color: rgba(255, 255, 255, 0.90);
 }
 
@@ -275,6 +274,24 @@ p {
 }
 
 #portfolio-container {
-  width: 85%;
+  width: 80%;
   margin: 0 auto;
+}
+
+#beauty {
+  font-family: 'Alex Brush', cursive;
+  font-size: 32px;
+  margin: 0;
+}
+
+.booking-link {
+  z-index: 1;
+}
+
+footer a {
+  color: rgb(75, 162, 221);
+}
+
+footer a:hover {
+  color: white;
 }
